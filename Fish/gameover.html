@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Space Warriors </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var menutxt = new sjs.Text('You Lose!!!!!', 30, 'brown');
+menutxt.centerH();
+var start = new sjs.Button('Menu', function(){
+	window.location = 'index.html';
+});
+start.center();
+var score = new sjs.Text('Score = 0', 25, 'brown');
+score.setText('Score = '+localStorage.getItem('score'));
+score.center().bottom();
+}
+</script>
+</head>
+<body onload="start()">
+<h1> Game Over! </h1>
+
+<div id="target" style="margin:auto;background:black;"></div>
+</body>
+</html>

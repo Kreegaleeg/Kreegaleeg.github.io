@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Space Warriors </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var playtxt = new sjs.Text('Use the arrow keys to move. Destroy smaller ships by running into them but if they are bigger than you, you get destroyed. Sometimes, a powerup will appear. Run into it to grow bigger!  Press space to hear some awsome music.', 30, 'brown');
+playtxt.centerH();
+var start = new sjs.Button('Menu', function(){
+	window.location = 'index.html';
+});
+start.center().bottom();
+}
+</script>
+</head>
+<body onload="start()">
+<h1> Menu </h1>
+
+<div id="target" style="margin:auto;background:black;"></div>
+</body>
+</html>

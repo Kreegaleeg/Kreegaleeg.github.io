@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Space Warriors </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var menutxt = new sjs.Text('Space Warriors', 30, 'brown');
+menutxt.centerH();
+var start = new sjs.Button('Start', function(){
+	window.location = 'fish.html';
+});
+start.center();
+var made = new sjs.Text('Made by Andrew Richardson', 25, 'brown');
+made.center().bottom();
+var play = new sjs.Button('How To Play', function(){
+	window.location = 'htplayspace.html'
+});
+play.center().offset(0, 35);
+}
+</script>
+</head>
+<body onload="start()">
+<h1> Menu </h1>
+
+<div id="target" style="margin:auto;background:black;"></div>
+</body>
+</html>
