@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Stop the Pizza </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var menu = new sjs.Text('Stop the Pizza', 50, 'red');
+menu.centerH();
+var button = new sjs.Button('Start', function(){
+	window.location = 'pong.html';
+});
+button.center();
+var button2 = new sjs.Button('How to Play', function(){
+	window.location = 'htplay.html'
+});
+button2.center().offset(0,35);
+var maker = new sjs.Text('Created by Andrew Richardson', 30, 'green');
+maker.centerH().bottom();
+var button3 = new sjs.Button('One Player', function(){
+	window.location = '1pong.html';
+});
+button3.center().offset(0, 70);
+} //end start
+</script>
+</head>
+<body onload="start()">
+<h1> Menu </h1>
+<div id="target" style="margin:auto;background:blue;"></div>
+</body>
+</html>

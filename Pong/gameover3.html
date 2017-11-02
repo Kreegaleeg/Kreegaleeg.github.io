@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Stop the Pizza </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var gameover_text = new sjs.Text('You Lose!', 50, 'red');
+gameover_text.centerH();
+var button = new sjs.Button('Menu', function(){
+	window.location = 'index.html';
+});
+button.center();
+} //end start
+</script>
+</head>
+<body onload="start()">
+<h1> Game Over! </h1>
+
+<div id="target" style="margin:auto;background:blue;"></div>
+</body>
+</html>

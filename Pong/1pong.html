@@ -1,0 +1,59 @@
+<html>
+<head>
+<title> Stop the Pizza </title> 
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script> 
+<script> 
+function start() {
+	sjs.open();
+
+	//ball object and properties
+	var pizza = new sjs.Image('Images/pizza.png');
+pizza.type = 'pizza';
+pizza.setSize(50,50);
+pizza.center();
+pizza.friction = 0;
+pizza.bounce();
+pizza.pushRight(5);
+pizza.pushUp(6);
+//Paddle 1
+var paddle1 = new sjs.Image('Images/green.png');
+paddle1.type = 'paddle';
+paddle1.centerH();
+paddle1.setSize(100,20);
+
+sjs.keyDown(LEFT_KEY, function(){
+	paddle1.pushLeft();
+});
+sjs.keyDown(RIGHT_KEY, function(){
+
+	paddle1.pushRight();
+});
+sjs.keyDown(A_KEY, function(){
+	paddle1.pushLeft();
+});
+sjs.keyDown(D_KEY, function(){
+	paddle1.pushRight();
+});
+//sound
+var soundEffect = new Audio('Music/signal.mp3');
+sjs.onHit('pizza', 'paddle', function(ball,paddle){
+	sjs.bounceOff(ball, paddle);
+	score = score + 1;
+	score_txt.setText('Score '+score)
+	soundEffect.play();
+});
+sjs.onHit('pizza', ['top_screen'], function(){
+	window.location = 'gameover3.html';
+});
+//score
+var score = 0;
+var score_txt = new sjs.Text('Score: = 0', 30, 'red');
+
+}
+</script> 
+</head> 
+<body onload="start()"> 
+<h1> Pizza Game </h1> 
+<div id="target" style="margin:auto;background:blue;"></div> 
+</body> 
+</html> 
