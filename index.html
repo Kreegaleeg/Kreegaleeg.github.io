@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> Menu </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var title = new sjs.Text('My Games', 30, 'green');
+var maker = new sjs.Text('Made by Andrew Richardson', 25, 'red');
+var btn1 = new sjs.Button('Pong', function(){
+	window.location = 'Pong/index.html';
+});
+var btn2 = new sjs.Button('Space Warriors', function(){
+	window.location = 'Fish/index.html';
+});
+title.center().top();
+maker.center().bottom();
+btn1.center();
+btn2.center().offset(0, 35);
+}
+</script>
+</head>
+<body onload="start()">
+<h1> Platform Game </h1>
+
+<div id="target" style="margin:auto;background:black;"></div>
+</body>
+</html>
