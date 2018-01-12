@@ -1,0 +1,133 @@
+p{
+	color: #0000ff;
+	font-size: 20px;
+}
+.steps{
+	color: maroon;
+	font-size: 25px;
+}
+.foood{
+	color: brown;
+	font-size: 18px;
+}
+#back{
+	background-color: green;
+}
+#butt{
+	height: 25px;
+	width: 60px;
+	color: red;
+	background-color: turquoise;
+	border-radius: 15px;
+}
+#titans{
+	height: 75%;
+	width: 75%;
+}
+#gum{
+	height: 75%;
+	width: 75%;
+}
+header{
+	height: 50px;
+	width: 100px;
+	border: 4px solid purple;
+	background-color: #003399;
+	margin-bottom: 5em;
+}
+#sponge{
+	height: 200px;
+	width: 200px;
+}
+footer{
+	height: 50px;
+	width: 200px;
+	border: 4px solid purple;
+	background-color: #003399;
+	color: #990000;
+}
+.trivia{
+	height: 300px;
+	width: 250px;
+	background-color: #cc9900;
+	border: double #00ffff;
+	padding-left: 3em;
+}
+.warning{
+	color: #cc3300;
+	font-size: 30;
+}
+#me{
+	color: #990000;
+}
+#hi{
+	height: 150px;
+	width: 150px;
+	background-color: #476b6d;
+	display: inline-block;
+	position: absolute;
+	z-index: 1;
+	position: relative;
+	top: 750px;
+	left: 45%;
+}
+#poop{
+	height: 150px;
+	width: 150px;
+	background-color: #65276d;
+	display: inline-block;
+	position: absolute;
+	z-index: 2;
+}
+#dead{
+	height: 150px;
+	width: 150px;
+	background-color: #c2ce16;
+	display: inline-block;
+	position: absolute;
+	position: fixed;
+	left: 25%;
+}
+#heee{
+	height: 2048px;
+}
+#mad{
+	margin-left: 400px;
+}
+.navitem{
+	list-style-type: none;
+	display: inline;
+	padding-left: 10px;
+}
+#navmenu{
+	height: 20px;
+	width: 320px;
+	margin: auto;
+	border: solid;
+	border-color: #722727;
+	background-color: #e5d88e;
+}
+a:link{
+	color: #ff2b2b;
+}
+a:visited{
+	color: #4c1a56;
+}
+a:hover{
+	color: #d88913;
+}
+a:active{
+	color: white;
+}
+#right{
+	float: right;
+	width: 50%;
+	padding-top: 30px;
+}
+#left{
+	float: left;
+	width: 50%
+}
+#none{
+	clear: right;
+}

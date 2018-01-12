@@ -1,0 +1,79 @@
+<html> 
+	<head>
+		<link type = 'text/css' rel = 'stylesheet' href = 'main.css'/>
+		<title> Kreegsite </title> 
+		<script>
+			function banner(){ 
+				var text = confirm("Do you want to have fun?"); 
+				return text; 
+			}
+			function answer(){
+				var radio = document.getElementsByName("food"); 
+				var selection = false; 
+				var message = "";
+				for( var i = 0; i < radio.length; i++) { 
+					if(radio[i].value == "Pizza" && radio[i].checked == true) { 
+						selection = true; 
+					} //end if statement 
+				} //end for loop
+				if(selection == true) {
+					message = message + "<b><p style='color:#435a7f'>You da best. PIIZZZZZZZZZZZZA!!!!!!</p></b>"; 
+				} else { 
+					message = message + "<b><p style='color:red'>That isn't the best food at all!</p></b>"; 
+				}
+				document.getElementById("yum").innerHTML = message;
+			}
+		</script>
+	</head> 
+	<body id = 'back'> 
+		<a href = 'http://kreegaleeg.github.io' onclick = 'return banner()'>
+			<header><p>Super Fun<p/></header>
+		</a>
+		<h1> Kreeg Fun :-b </h1>
+		<nav>
+			<ul id = 'navmenu'>
+				<li class = 'navitem'><a href = 'index.html'>Home</a></li>
+				<li class = 'navitem'><a href = 'games.html'>Games</a></li>
+				<li class = 'navitem'><a href = 'fun.html'>Super Awsome Kreeg Fun!</a></li>
+			</ul>
+		</nav>
+		<div id = 'right'>
+			<div class = 'trivia'>
+				<h2> Random Trivia </h2>
+				<p class = 'foood'> What is your favorite food? </p>
+				<form>
+					<div id = 'yum'> </div>
+					<input type = 'radio' name = 'food' value = 'Pizza'>Pizza<br>
+					<input type = 'radio' name = 'food' value = 'Pineapple'>Pineapple<br>
+					<input type = 'radio' name = 'food' value = 'Cheerios'>Cheerios<br>
+					<input type = 'radio' name = 'food' value = 'something else'>Something Else<br>
+					<input type = 'button' value = 'Submit' id = 'butt' onclick = 'answer()'>
+				</form>
+			</div>
+		</div>
+		<div id = 'left'>
+			<p id = 'me'>Go to 6:34 to hear me!</p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/H9kEc4xekGM?rel=0" frameborder="0" allowfullscreen>hi</iframe>
+		</div>
+		<div id = 'none'>
+		<audio id = 'mad' width = '400' height = '220' controls>
+			<source src = 'mad_robots.mp3'>
+				if you see these words you are amazing
+		</audio>
+		<p> This websit is fun! There are all kinds of games and stuff you can do. <span class = 'warning'>WARNING: YOU WILL BE ADDICTED >:-)</span> If you can get off this website in under 5 minutes you are not human!!!!!!!!!  If you can get off in under 5 minutes here is what you do:</p>
+		<ol>
+			<li class = 'steps'>Eat a pineapple</li>
+			<li class = 'steps'>Get back on this website</li>
+			<li class = 'steps'>Repeat</li>
+		</ol>
+		<p></p>
+		<img  id = 'titans' src = 'https://a248.e.akamai.net/ib.huluim.com/show_key_art/29984?size=1600x600&region=US'/>
+		<p> </p>
+		<img id = 'gum' src = 'https://vignette.wikia.nocookie.net/theamazingworldofgumball/images/0/0e/Gumball_1600x900.jpg/revision/latest?cb=20110512011204'/>
+		<hr>
+		<center>Andrew Richardson <a href = 'http://kizi.com'> Click me for more fun! </a>
+		</center>
+		<footer>Andrew Richardson made this awsome Kreeg Site!!!</footer>
+		</div>
+	</body> 
+</html>
