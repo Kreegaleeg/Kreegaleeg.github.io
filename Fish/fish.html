@@ -95,7 +95,7 @@ sjs.onHit('player', 'enemy', function(x,y){
 	}
 	y.destroy();
 });
-if(score == 15) {
+if(score >= 15) {
 	sjs.destroyAll('enemy');
 	window.location = 'win.html';
 }
